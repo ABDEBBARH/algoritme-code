@@ -1,0 +1,24 @@
+Algorithme : AnalyserPhrase
+
+Entrée : phrase (une chaîne de caractères se terminant par un point)
+
+Variables :
+  compteurLongueur <- 0
+  compteurMots <- 0
+  compteurVoyelles <- 0
+
+Pour chaque caractère dans la phrase :
+  Incrémenter compteurLongueur de 1
+  
+  Si le caractère est un espace :
+    Incrémenter compteurMots de 1
+  
+  Si le caractère est une voyelle (sans distinction de cas) :
+    Incrémenter compteurVoyelles de 1
+
+Décrémenter compteurLongueur de 1  // Ajuster pour le point à la fin
+
+Sortie :
+  Afficher "Longueur de la phrase :", compteurLongueur
+  Afficher "Nombre de mots dans la phrase :", compteurMots + 1  // Ajouter 1 pour le dernier mot
+  Afficher "Nombre de voyelles dans la phrase :", compteurVoyelles
